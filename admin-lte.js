@@ -131,7 +131,7 @@ function skinUrl (name) {
 
 function _absoluteUrlOptions() {
   //add secure option if we are https
-  return window.location.protocol.contains('https:') ? {secure: true} : {};
+  return window.location.protocol.includes('https:') ? {secure: true} : {};
 }
 
 function waitOnCSS (url, timeout) {
